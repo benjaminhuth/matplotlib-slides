@@ -1,0 +1,17 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "matplotlib-slides"
+version = "0.1.0"
+description = "Simple matplotlib-based PDF slide generator for coding agents"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib>=3.5",
+    "numpy>=1.21",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/matplotlib_slides"]
